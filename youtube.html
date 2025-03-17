@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Введите имя</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #0073e6;
+        }
+        input {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Введите своё имя</h1>
+        <input type="text" id="username" placeholder="Ваше имя">
+        <br>
+        <button class="btn" onclick="redirectUser()">Перейти</button>
+    </div>
+
+    <script>
+        function redirectUser() {
+            var name = document.getElementById("username").value.trim().toLowerCase();
+
+            // Объект с именами и их ссылками
+            var links = {
+                "Амина": "https://google.com",
+                "Энхара": "https://yandex.ru",
+                "Айдана": "https://github.com"
+                "Ақбота": "https://google.com",
+                "Дина": "https://yandex.ru",
+                "Дана": "https://github.com"
+                "Баянсұлу": "https://google.com",
+              
+            };
+
+            if (links.hasOwnProperty(name)) {
+                window.location.href = links[name]; // Переход по нужной ссылке
+            } else {
+                alert("Имя не найдено! Попробуйте другое.");
+            }
+        }
+    </script>
+</body>
+</html>

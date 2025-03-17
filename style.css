@@ -1,0 +1,43 @@
+body{ 
+    background-color: rgb(241, 241, 241);
+    color: rgb(0, 0, 0);
+    
+    
+    
+    font-size: 13px;
+    font-weight:normal ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.avatar{
+  width: 200px;
+  border-radius: 21%;
+  box-shadow: 4px 4px 14px rgb(0, 0, 0);
+
+}
+
+.info p {
+  color: #858585;
+  margin:0 ;
+  font-style: italic;
+ text-decoration: underline;
+ /*text-transform: capitalize; */
+ /*letter-spacing: 2px;*/
+}
+.container{
+    max-width: 850px;
+    margin: auto;
+ }
+
+.social {
+  background: rgb(184, 219, 144);
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+
+  border: 5px solid rgb(8, 32, 10);
+  margin: 20px ;
+  border-bottom-style: dashed;
+   border-top-width: 15px;
+}
+
